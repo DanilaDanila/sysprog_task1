@@ -71,7 +71,7 @@ static void handle_events(int fd, char *abs_path_to_subdir) {
 }
 
 int get_fanotify_modify_fd(char *mp_abs_path) {
-    int fd = fanotify_init(FAN_CLOEXEC | FAN_CLASS_CONTENT | FAN_NONBLOCK, O_RDONLY | O_LARGEFILE);
+    int fd = fanotify_init(FAN_CLASS_CONTENT | FAN_NONBLOCK, O_RDONLY | O_LARGEFILE);
 
     if (fd == -1) {
         perror("[ERROR] fanotify init");
