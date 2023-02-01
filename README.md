@@ -10,33 +10,33 @@
 
 ## Build
 
-```
+```bash
 $ make
 ```
 
 ## Run
 
-```
-# ./a.out /path/to/directory
+```bash
+$ sudo ./a.out /path/to/directory
 ```
 
 ## Example
 
 Подготовка
-```
+```bash
 ## terminal 1 ##
 $ cd
 $ mkdir -p testdir/ddd
 ```
 
 Запускаем
-```
+```bash
 ## terminal 2 ##
-# ./a.out /home/user/testdir
+$ sudo ./a.out /home/user/testdir
 ```
 
 'Работаем'
-```
+```bash
 ## terminal 1 ##
 $ echo 123 > testdir/ddd/ff.txt
 $ echo 456 >> testdir/ddd/ff.txt
@@ -48,9 +48,9 @@ $ rm -rf testdir
 ```
 
 Вывод программы (целиком):
-```
+```bash
 ## terminal 2 ##
-# ./a.out /home/user/testdir
+$ sudo ./a.out /home/user/testdir
 [LOG] Press eny key to terminate
 [LOG] Listening for events
 [NOTIFY] File modified: '/home/user/testdir/ddd/ff.txt'
